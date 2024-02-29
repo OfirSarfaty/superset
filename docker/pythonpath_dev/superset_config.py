@@ -71,7 +71,6 @@ CACHE_CONFIG = {
 }
 DATA_CACHE_CONFIG = CACHE_CONFIG
 
-
 class CeleryConfig:
     broker_url = f"redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_CELERY_DB}"
     imports = ("superset.sql_lab",)
@@ -89,6 +88,8 @@ class CeleryConfig:
         },
     }
 
+
+MAPBOX_API_KEY = 'pk.eyJ1Ijoib2Zpci1zYXJmYXR5IiwiYSI6ImNsc3ZvdnNobTF0ZGIybnFrcHFuaGh6M2EifQ.EAklwaLZvUZj-JCp3lPxEQ'
 
 CELERY_CONFIG = CeleryConfig
 
